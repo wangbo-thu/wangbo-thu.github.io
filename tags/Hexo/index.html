@@ -96,7 +96,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="行云的小屋">
-<meta property="og:url" content="https://wangbo-thu.github.io/tags/hexo/index.html">
+<meta property="og:url" content="https://wangbo-thu.github.io/tags/Hexo/index.html">
 <meta property="og:site_name" content="行云的小屋">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://wangbo-thu.github.io/tags/hexo/"/>
+  <link rel="canonical" href="https://wangbo-thu.github.io/tags/Hexo/"/>
 
 
 
 
 
-  <title>标签: hexo | 行云的小屋</title>
+  <title>标签: Hexo | 行云的小屋</title>
   
 
 
@@ -299,7 +299,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>hexo<small>标签</small>
+        <h1>Hexo<small>标签</small>
         </h1>
       </div>
 
@@ -311,9 +311,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2017/08/10/First-blog/" itemprop="url">
+            <a class="post-title-link" href="/2018/01/03/hello-world/" itemprop="url">
               
-                <span itemprop="name">First blog</span>
+                <span itemprop="name">Hello World</span>
               
             </a>
         
@@ -321,9 +321,65 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-10T15:52:02+08:00"
-              content="2017-08-10" >
-          08-10
+              datetime="2018-01-03T19:40:49+08:00"
+              content="2018-01-03" >
+          01-03
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2017/08/11/Hexo建站记录/" itemprop="url">
+              
+                <span itemprop="name">Hexo建站记录</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-08-11T20:12:05+08:00"
+              content="2017-08-11" >
+          08-11
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2017/08/11/Markdown-Basics/" itemprop="url">
+              
+                <span itemprop="name">Markdown-Basics</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-08-11T15:23:27+08:00"
+              content="2017-08-11" >
+          08-11
         </time>
       </div>
 
@@ -383,7 +439,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -394,7 +450,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -405,7 +461,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -488,7 +544,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客共668字</span>
+  <span class="post-count">博客共2.2k字</span>
 </div>
         
 <div class="busuanzi-count">
@@ -1021,61 +1077,6 @@
               },
               error: function(counter, error) {
                 console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-</body>
-</html>
-with error message: ' + error.message);
               }
             });
           } else {
