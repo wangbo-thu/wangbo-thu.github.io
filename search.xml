@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F01%2F03%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo建站记录]]></title>
+    <url>%2F2017%2F08%2F11%2FHexo%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95%2F</url>
+    <content type="text"><![CDATA[花了两天时间，如同抽风一般，终于把这个小站搭起来了。前前后后也参考了不少博客，个人习惯问题，向来不会记录参考的文献，遇到了问题，就东找西找，虽解决了问题，然自己也不清楚是怎么解决的，实在不是做事的态度。最近，愈加觉得应该对自己的工作、学习、思考以文字的形式输出，理清脑中的混沌，活得明白些，因此从这里开始，对如何搭建的这个网站做一个简单的总结。 下载Node.js 比较保守，用的LTS版的，安装时出现错误，得使用管理员身份安装，在cmd里安装成功，我 电脑里的权限问题一直比较奇怪，也懒得去折腾了。 Hexo部分安装HexoGithub部分 新建仓库 仓库名为username.github.io,其中username必须和GitHub的用户名一致，我的第一个错误就是在这随便取了个名，网站能在本地发布，却死活不能在外网查看，因为这个网站的域名已经有人使用，思考了会觉得至少不能重名，后来看到了得和username一致，在这里折腾好久也是够傻的。 备份Hexo文件夹 再新建一个仓库xyblog，把本地Hexo的设置备份在github上。]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown-Basics]]></title>
+    <url>%2F2017%2F08%2F11%2FMarkdown-Basics%2F</url>
+    <content type="text"><![CDATA[A First Level HeaderA Second Level HeaderNow is the time for all good men to come tothe aid of their country. This is just aregular paragraph. The quick brown fox jumped over the lazydog’s back. Header 3 This is a blockquote. This is the second paragraph in the blockquote. This is an H2 in a blockquote Some of these words are emphasized.Some of these words are emphasized also.Use two asterisks for strong emphasis.Or, if you prefer, use two underscores instead. Candy. Gum. Booze. Candy. Gum. Booze. Red Green Blue A list item.With multiple paragraphs. Another item in the list. This is an example link. This is an example link. I get 10 times more traffic from Google than fromYahoo or MSN. I start my morning with a cup of coffee andThe New York Times. I strongly recommend against using any &lt;blink&gt; tags. I wish SmartyPants used named entities like &amp;mdash;instead of decimal-encoded entites like &amp;#8212;. If you want your page to validate under XHTML 1.0 Strict,you’ve got to put paragraph tags in your blockquotes: For example. Here is an example of AppleScript: tell application &quot;Foo&quot; beep end tell 123tell application "Foo" beepend tell Refs:[1] Markdown Basics[2] Markdown 语法手册[3] Mastering Markdown]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[First blog]]></title>
+    <url>%2F2017%2F08%2F10%2FFirst-blog%2F</url>
+    <content type="text"><![CDATA[This is my first blog on github.]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
